@@ -1,0 +1,21 @@
+
+<tsmm-header></tsmm-header>
+
+<view class="container">
+  <view class="image-container" bindtap="chooseImage">
+    <image src="{{files[0] ? files[0].url : ''}}" class="image" mode="aspectFill" />
+    <text class="add-icon" wx:if="{{!files.length}}">+</text>
+    
+  </view>
+  <text>{{name}}</text>
+ 
+</view>
+<my_collect></my_collect>
+
+<my_upload></my_upload>
+<!-- <button bindtap="navigateToProfile">个人信息</button>
+<button bindtap="confirmLogout">退出登录</button> -->
+<rowstyle bindtap="navigateToProfile" title="个人信息" icon="smile-o" col="orange"></rowstyle>
+<rowstyle bindtap="confirmLogout" title="退出登录" icon="close" col="grey"></rowstyle>
+
+

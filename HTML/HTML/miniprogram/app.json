@@ -1,0 +1,66 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/cate/cate",
+    "pages/add/add",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/release/release",
+    "pages/register/register",
+    "pages/person/person",
+    "pages/collect/collect"
+
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "图书宝",
+    "navigationBarBackgroundColor": "#2b4b6b"
+  },
+  "tabBar": {
+    "selectedColor": "#2b4b6b",
+    "list":[
+      {"text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/home.png",
+        "selectedIconPath": "/image/home-fill.png"
+      },
+      {"text": "分类",
+        "pagePath": "pages/cate/cate",
+        "iconPath": "/image/cate.png",
+        "selectedIconPath": "/image/cate-fill.png"
+      },
+      {"text": "发布",
+        "pagePath": "pages/add/add",
+        "iconPath": "/image/add.png",
+        "selectedIconPath": "/image/add-fill.png"
+      },
+      {"text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "/image/user.png",
+        "selectedIconPath": "/image/user-fill.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "tsmm-header":"components/tsmm-header/tsmm-header",
+    "news-item":"components/news-item/news-item",
+    "my_collect":"components/my_collect/my_collect",
+    "my_upload":"components/my_upload/my_upload",
+    "rowstyle":"components/rowstyle/rowstyle",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "footer":"components/footer/footer",
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-card": "@vant/weapp/card/index"
+  },
+ 
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "enablePullDownRefresh": true
+}

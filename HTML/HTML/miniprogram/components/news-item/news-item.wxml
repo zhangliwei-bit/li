@@ -1,0 +1,16 @@
+<navigator url="/pages/detail/detail?name={{name}}&phone={{phone}}&price={{price}}&img={{img}}&personPhone={{10086}}" class="nsitem">
+  <view class="pic">
+    <image src="{{img}}" mode="aspectFill"/>
+  </view>
+
+  <view class="text">
+    <view class="block">
+      <van-icon name="hot-sale-o" size="30" color="red"/>
+      <view class="title">{{name}}</view>
+    </view>
+    <view class="block">
+      <van-icon name="gold-coin-o"  size="30" color="red" />
+      <view class="price">：{{price}}元</view>
+    </view>
+  </view>
+</navigator>

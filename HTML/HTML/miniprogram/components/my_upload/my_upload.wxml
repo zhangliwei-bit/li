@@ -1,0 +1,7 @@
+<navigator url="/pages/release/release">
+  <view class="collect">
+    <van-icon name="list-switch"  color="green" size="50rpx"/>
+    <text>我的发布</text>
+    <van-icon name="arrow" />
+  </view>
+</navigator>

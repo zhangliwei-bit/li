@@ -1,0 +1,31 @@
+.product{
+  border:1px solid #000000;
+}
+.product .pic .image{ 
+  width:100%;
+}
+.product .text{ 
+  padding:30rpx 20rpx;
+}
+.product .title{ 
+  font-size: 36rpx; 
+  color:#000000; 
+  border-bottom:1rpx solid #000000; padding-bottom:20rpx;margin-bottom:10rpx; white-space: nowrap; 
+  text-overflow: ellipsis; 
+  width: 100%; 
+  overflow: hidden;
+}
+.product .row{ 
+  font-size: 28rpx; 
+  color:#000000; 
+  display: flex; 
+  line-height: 2em;
+}
+.product .row .left{ 
+  font-size: 26rpx;
+  white-space: nowrap;
+}
+.product .row .right{ 
+  color:#000000; 
+  white-space: nowrap;
+}

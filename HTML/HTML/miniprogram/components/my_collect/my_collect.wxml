@@ -1,0 +1,7 @@
+<navigator url="/pages/collect/collect">
+  <view class="collect">
+    <van-icon name="gift-o" color="purple" size="50rpx"/>
+    <text>我的收藏</text>
+    <van-icon name="arrow" />
+  </view>
+</navigator>

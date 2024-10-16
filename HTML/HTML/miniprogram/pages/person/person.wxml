@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="image-container" bindtap="chooseImage">
+    <image src="{{files[0] ? files[0].url : ''}}" class="image" mode="aspectFill" />
+    <text class="add-icon" wx:if="{{!files.length}}">+</text>
+    
+  </view>
+  <text>{{name}}</text>
+ 
+</view>
+<button bindtap="changeName">修改昵称</button>
+  <button bindtap="chooseImage">修改头像</button>
+  <navigator url='/pages/user/user' open-type="reLaunch" >
+    <button>返回</button>
+  </navigator>

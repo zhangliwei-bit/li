@@ -1,0 +1,38 @@
+/* components/news-item/news-item.wxss */
+.nsitem{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+}
+.nsitem .pic{
+  width: 320rpx;
+  height: 350rpx;
+}
+.nsitem .pic image{
+  width: 100%;
+  height: 100%;
+}
+.nsitem .text{
+  width: 340rpx;
+  height: 350rpx;
+  text-align: justify;
+}
+.nsitem .text .title{
+  line-height: 4.4em;
+  color: var(--globalColor);
+  font-size: 40rpx;
+  font-weight:bold ;
+}
+.nsitem .text .block {
+  display: flex;
+  align-items: center;
+}
+.nsitem .text .block .price{
+  line-height: 1.4em;
+  color: #d81e06 ;
+  font-size: 40rpx;
+  font-weight:bold ;
+}
+.nsitem .text .block van-icon{
+  margin-left: 0rpx;
+}

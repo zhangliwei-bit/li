@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    <text class="title">{{isLogin ? '登录' : '注册'}}</text>
+  </view>
+  
+  <view class="form">
+    <input class="input" type="text" placeholder="手机号" value="{{phone}}" bindinput="onInput" data-type="phone" />
+    <input class="input" type="password" placeholder="密码" value="{{password}}" bindinput="onInput" data-type="password" />
+    
+    <button class="submit-btn" bindtap="handleSubmit">{{isLogin ? '登录' : '注册'}}</button>
+    
+    <text class="toggle-text" bindtap="toggleLoginMode">
+      {{isLogin ? '还没有账户？注册' : '已有账户？登录'}}
+    </text>
+  </view>
+</view>

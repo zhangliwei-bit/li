@@ -1,0 +1,98 @@
+.bbt{
+  width: 100%;
+  text-align: center;
+}
+
+/* .container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+} */
+
+/* 输入框样式 */
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* picker 样式 */
+picker{
+  width: 80%;
+  border: 1px solid #ccc;
+  margin: 10px 0; 
+  
+}
+/* picker 显示框样式 */
+picker view {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+  
+}
+
+/* 按钮样式 */
+ button {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 75rpx;
+  border: none;
+  border-radius: 5px;
+  background-color: #007aff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 按钮 hover 效果 */
+ button:hover {
+  background-color: #105bb5;
+  justify-content: center;
+}
+
+/* placeholder 样式 */
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* 选中类别的样式 */
+.selectedType {
+  color: #007aff;
+  font-weight: bold;
+}
+.container {
+  padding: 20px;
+}
+
+.image-box {
+  width: 100px; /* 设置方框的宽度 */
+  height: 100px; /* 设置方框的高度 */
+  border: 1px dashed #ccc; /* 方框样式 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  background-color: #dedede; /* 背景颜色 */
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+}
+
+.add-icon {
+  font-size: 50px; /* 加号的字体大小 */
+  color: #123456; /* 加号的颜色 */
+  position: absolute; /* 绝对定位，使加号居中 */
+}

@@ -1,0 +1,17 @@
+.collect{
+  height: 120rpx;
+  border:1rpx solid var(--themeColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.collect van-icon {
+  width: 40rpx;
+  color: #7e8081;
+}
+.collect text{
+  font-weight: bold;
+  padding-right: 400rpx;
+  color: #0c0104;
+}

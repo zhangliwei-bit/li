@@ -1,0 +1,6 @@
+
+  <view class="collect">
+    <van-icon name="{{icon}}"  color="{{col}}" size="50rpx"/>
+    <text>{{title}}</text>
+    <van-icon name="arrow" />
+  </view>

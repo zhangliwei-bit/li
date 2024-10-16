@@ -1,0 +1,22 @@
+<view> 
+  <input placeholder="请输入书名" bindblur="handName"></input>
+  <view>
+    <picker mode="selector" range="{{categories}}" bindchange="selectype"> 
+      <view>
+        {{selectedType ? selectedType : '请选择类别'}}
+      </view>
+    </picker>
+  </view>
+  <input placeholder="请输入价格" bindblur="handPrice"></input> 
+  <input placeholder="请输入电话号码" bindblur="handPhone"></input> 
+  <view class="container">
+    <view class="image-box" bindtap="chooseImage">
+      <image src="{{files[0].url }}" mode="aspectFill" class="preview-image" />
+      <text wx:if="{{files.length === 0}}" class="add-icon">+</text>
+    </view>
+  </view>
+  <view class="bbt">
+    <button bindtap="handAdd">提交</button> 
+  </view>
+</view>
+<footer></footer>

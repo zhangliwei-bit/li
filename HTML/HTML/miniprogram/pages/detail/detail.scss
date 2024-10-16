@@ -1,0 +1,72 @@
+/* pages/detail/detail.wxss */
+.detail{
+  .title{
+    font-size: 50rpx;
+    line-height: 1.5em;
+    font-family: Arial, sans-serif;
+  }
+  .price {
+    display: flex; /* 使用 flexbox 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    margin: 20rpx 0; /* 上下外边距 */
+    font-size: 48rpx; /* 字体大小 */
+    color: rgb(216, 21, 21); /* 字体颜色 */
+    font-weight: bold;
+    text:first-child {
+      font-size: 48rpx; /* 折扣价标签字体大小 */
+      //color: rgb(10, 0, 0); /* 标签字体颜色 */
+      margin-right: 10rpx; /* 标签与价格之间的间距 */
+     
+    }
+  }
+  .van-button {
+    width: 90%; /* 按钮宽度 */
+    margin: 10rpx 5%; /* 上下外边距 */
+    border-radius: 20rpx; /* 按钮圆角 */
+   
+  }
+  image{
+    width: 100%; /* 100% 宽度，响应式 */
+    //padding: 20rpx; /* 内边距 */
+    box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  }
+  .info{
+    font-size: 28rpx;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx 0 50rpx;
+    .left{
+      text{
+        padding-right: 15rpx;
+      }
+    }
+    .right{
+      display: flex;
+      align-items: center;
+      color:var(--themeColor);
+      position: relative;
+      .share{
+        position: absolute;
+        top:0;
+        left:0;
+        opacity: 0;
+      }
+      text{
+        padding-left:5rpx;
+      }
+    }
+  }
+  .announce{
+    margin-top:30rpx;
+    background:var(--globalBgColor2);
+    padding:30rpx;
+    font-size: 26rpx;
+    color:#888;
+    .top{
+      font-size: 30rpx;
+      padding-bottom:15rpx;
+    }
+  }
+}

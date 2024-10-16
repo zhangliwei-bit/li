@@ -1,0 +1,96 @@
+<tsmm-header></tsmm-header>
+
+<view class="banner">
+  <swiper previous-margin="30rpx" circular autoplay interval="3000" indicator-dots>
+    <swiper-item>
+      <image src="/image/swiper_1.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/swiper_2.jpg" mode=""/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/swiper_3.jpg" mode=""/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="scrollNav">
+  <scroll-view scroll-x>
+    <navigator url="/pages/cate/cate?idx=0" open-type="reLaunch" class="item" >
+    <!-- //改为<navigator url="/pages/cate/cate?idx={{index}}"></navigator> -->
+      <view class="pic">
+        <image src="/image/计算机.png" mode=""/>
+      </view>
+
+      <view class="text">
+        计算机
+      </view>
+    </navigator>
+    <navigator url="/pages/cate/cate?idx=1" open-type="reLaunch" class="item" >
+      <view class="pic">
+        <image src="/image/软件.png" mode=""/>
+      </view>
+
+      <view class="text">
+        软件
+      </view>
+    </navigator>
+    <navigator url="/pages/cate/cate?idx=2" open-type="reLaunch" class="item" >
+      <view class="pic">
+        <image src="/image/英语.png" mode=""/>
+      </view>
+
+      <view class="text">
+        英语
+      </view>
+    </navigator>
+    <navigator url="/pages/cate/cate?idx=3" open-type="reLaunch" class="item" >
+      <view class="pic">
+        <image src="/image/数学.png" mode=""/>
+      </view>
+
+      <view class="text">
+        数学
+      </view>
+    </navigator>
+    <navigator url="/pages/cate/cate?idx=4" open-type="reLaunch" class="item" >
+      <view class="pic">
+        <image src="/image/化学.png" mode=""/>
+      </view>
+
+      <view class="text">
+        化学
+      </view>
+    </navigator>
+    <navigator url="/pages/cate/cate?idx=5" open-type="reLaunch" class="item" >
+      <view class="pic">
+        <image src="/image/物理.png" mode=""/>
+      </view>
+
+      <view class="text">
+        物理
+      </view>
+    </navigator>
+  </scroll-view>
+</view>
+
+
+<view class="last">
+  <view class="fire">
+    <image src="/image/火.png" mode=""/>
+  </view>
+
+  <view class="font">最近热卖</view>
+</view>
+
+
+<view class="news">
+  <view class="content">
+    <view class="box" wx:for="{{latest}}" wx:key="index">
+     <news-item name="{{item.name}}" price="{{item.price}}" img="{{item.picPath}}"
+     phone="{{item.phone}}"></news-item>
+    </view>
+  </view>
+ 
+</view>
+<footer></footer>

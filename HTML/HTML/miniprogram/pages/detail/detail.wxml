@@ -1,0 +1,52 @@
+<view style="padding:80rpx 30rpx ;" wx:if="{{!detail}}">
+  <van-skeleton title row="5" />
+
+</view>
+
+
+<view class="detail" wx:else="">
+  <view class="title">{{name}}</view>
+  <view class="info">
+    <view class="left">
+      <text>卖家联系方式：</text>
+      <text>{{phone}}</text>
+    </view>
+    <view class="right">
+      <van-icon  name="share" size="18"/>
+      <text>分享</text>
+      <button open-type="share" class="share" size="mini">
+      享
+      </button>
+    </view>
+  </view>
+
+  <view class="pic">
+    <image src="{{img}}" mode="aspectFilt"/>
+  </view>
+
+  <view class="price">
+    <text>券后：</text>
+    <text>{{price}}元</text>
+  </view>
+
+  <van-button color="linear-gradient(to right, #4169e1, #4169e1)" size="large" bind:tap="purchase">
+  购买
+  </van-button>
+
+  <van-button color="linear-gradient(to right, rgb(243, 133, 7), rgb(228, 92, 38))" size="large" bind:tap="collectit">
+  收藏
+  </van-button>
+
+  <van-button color="linear-gradient(to right, #d3d3d3,#d3d3d3)" size="large" bind:tap="goBack">
+  返回
+  </van-button>
+
+  
+
+
+  <view class="announce">
+    <view class="top">免责声明</view>
+    <view>具体图书实物可能略有偏差，商品信息均来自卖家，图书宝小程序端概不负责，如有不满意请联系卖家进行退换。如需帮助请联系客服。</view>
+  </view>
+
+</view>

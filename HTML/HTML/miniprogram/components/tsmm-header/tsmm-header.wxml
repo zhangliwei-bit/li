@@ -1,0 +1,10 @@
+<view class="header">
+  <navigator url="/pages/index/index" openType="switchTab" class="logo">
+    <image src="/image/book.png" mode="heightFix"  class="pic"/>
+  </navigator>
+
+  
+  <navigator url="/pages/search/search" class="logo" >
+    <image src="/image/放大镜.png" mode="heightFix" class="pic"/>
+  </navigator>
+</view>

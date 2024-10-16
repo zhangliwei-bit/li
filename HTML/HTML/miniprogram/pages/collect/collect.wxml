@@ -1,0 +1,10 @@
+<view class="news">
+  <view class="content">
+    <view class="box" wx:for="{{productList}}" wx:key="index">
+     <news-item name="{{item.name}}" price="{{item.price}}" img="{{item.picPath}}"
+     phone="{{item.phone}}"></news-item>
+    </view>
+  </view>
+ 
+</view>
+<footer></footer>

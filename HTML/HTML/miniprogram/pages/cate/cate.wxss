@@ -1,0 +1,43 @@
+/* pages/cate/cate.wxss */
+.banner {
+  width: 100%;
+  height: 478rpx;
+}
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+
+.nav .content .body {
+  padding: 50 30rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav .content .body .box {
+  width: 690rpx;
+  height: auto;
+  margin-bottom: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.nav .content .body .box navigator {
+  z-index: 100;
+}
+
+.nav .content .body .box navigator .van-card {
+  z-index: 10;
+}
+
+.nav .content .nav .loadOut {
+  text-align: center;
+  padding: 30rpx;
+}
+
+.nav .content .nav .loadOut .noData {
+  font-size: 30rpx;
+  color: #666;
+}

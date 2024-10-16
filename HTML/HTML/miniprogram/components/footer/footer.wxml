@@ -1,0 +1,12 @@
+<view class="footer">
+  <view class="row">Copyright @ {{year}} 版权所有</view>
+  <view class="row">解释权归2111所有</view>
+  <view class="row">吉林大学北苑一公寓2111</view>
+</view>
+
+
+<view class="kefu">
+  <button class="btn" open-type="contact">6</button>
+  <image src="/image/客服.png" mode="aspectFill" class="pic"/>
+  <view class="line"></view>
+</view>

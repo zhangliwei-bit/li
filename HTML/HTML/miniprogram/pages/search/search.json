@@ -1,0 +1,10 @@
+{
+  "usingComponents": {"van-search": "@vant/weapp/search/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "product":"/components/product/product"
+  },
+  "navigationBarBackgroundColor": "#2b4b6b",
+  "navigationBarTitleText": "search",
+  "navigationBarTextStyle":"white"
+}

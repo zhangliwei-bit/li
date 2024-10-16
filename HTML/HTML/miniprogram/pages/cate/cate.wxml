@@ -1,0 +1,43 @@
+<tsmm-header></tsmm-header>
+<view class="banner">
+  <image src="/image/吉林大学.jpg" mode="aspectFill" />
+</view>
+
+<view class="nav">
+  <van-tabs border color="#2b4b6b" title-active-color="#2b4b6b" active="{{ navActive }}" bind:click="navChange" animated swipeable>
+    <van-tab title="{{leftList[index]}}" wx:for="{{leftList}}" wx:key="index" >
+    
+      <view class="content">
+        <view class="body">
+          
+            <view class="box" wx:for="{{cateArr[navActive]}}" wx:key="index">
+              <navigator url="/pages/detail/detail?name={{item.name}}&phone={{item.phone}}&price={{item.price}}&img={{item.picPath}}&personPhone={{10086}}" class="navCard">
+              
+                <van-card thumb-mode="aspectFit"
+                  
+                  price="{{item.price}}"
+                  desc="联系方式：{{item.phone}}"
+                  origin-price="99.99"
+                  
+                  title="{{item.name}}"
+                  thumb="{{ item.picPath }}"/>
+                  
+              </navigator>
+            </view>
+         
+        </view>
+
+        <view class="loadOut">
+          <van-loading size="24px" wx:if="{{loading}}">加载中...</van-loading>
+          <view class="noData" wx:if="{{isData}}">
+            没有更多数据了~
+          </view>
+        </view>
+      </view>
+    
+    </van-tab>
+  </van-tabs>
+</view>
+<footer></footer>
+
+

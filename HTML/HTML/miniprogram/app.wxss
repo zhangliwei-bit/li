@@ -1,0 +1,15 @@
+view,text{
+  box-sizing: border-box;
+}
+page{
+  --themeColor:#2b4b6b;
+  --globalColor:#1a1b1c;
+  --focusColor:#4c4d4e;
+  --descColor:#7e8081;
+  --greyColor:#8e8e8e;
+  --subColor:#b1b2b3;
+  --lightColor:#e4e4e4e;
+  --globalBgColor1:#e3e4e5;
+  --globalBgColor2:#f6f7f8;
+  --globalBgColor3:#ffffff;
+}
